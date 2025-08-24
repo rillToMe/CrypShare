@@ -69,6 +69,12 @@ CrypShare/
 
 ---
 
+## 🏗 Architecture
+
+![Architecture Diagram](assets/architecture_diagram.png)
+
+---
+
 ## 📄 License
 
 Apache 2.0 License
