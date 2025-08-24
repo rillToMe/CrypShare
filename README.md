@@ -66,7 +66,7 @@ CrypShare/
 ├─ certs/            # https certificates
 ├─ TransferPy.ps1    # PowerShell launcher
 ├─ requirements.txt  # python dependencies
-├─ License           
+├─ LICENSE           
 └─ README.md
 ```
 
