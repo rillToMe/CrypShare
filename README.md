@@ -65,7 +65,7 @@ CrypShare/
 ├─ cache/            # cached password/ip
 ├─ certs/            # https certificates
 ├─ asset/
-├─ TransferPy.ps1    # PowerShell launcher
+├─ main.ps1          # PowerShell launcher
 ├─ requirements.txt  # python dependencies
 ├─ LICENSE           
 └─ README.md
