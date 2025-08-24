@@ -4,6 +4,8 @@ CrypShare is a lightweight solution for sharing files across local networks with
 Featuring a sleek **dark neon UI**, CrypShare provides a secure, fast, and elegant experience across devices.
 
 ---
+> **Network tip:** For stable & faster transfers, prefer **5 GHz Wi-Fi** (if supported) or **wired (LAN/RJ45)** / **USB tethering**. Avoid crowded **2.4 GHz** bands and nearby interference sources.
+---
 
 ## ✨ Features
 
