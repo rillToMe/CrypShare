@@ -105,7 +105,7 @@ if (-not (Test-Path $logPath)) {
     Write-Host "📂 Folder logs dibuat di: $logPath" -ForegroundColor Green
 }
 
-$files = @("index.html", "files.html", "forget.html","help-https.html", "style.css", "script.js", "server.py")
+$files = @("index.html", "files.html", "forget.html","help-https.html", "style.css", "script.js", "server.py", "logo.png")
 foreach ($f in $files) {
     $sourceFile = "$systemFolder\$f"
     if (-not (Test-Path $sourceFile)) {
@@ -115,6 +115,7 @@ foreach ($f in $files) {
     Copy-Item $sourceFile "$servePath\$f" -Force
     Copy-Item $sourceFile "$logPath\$f" -Force
 }
+
 
 Write-Host "🔍 Mencoba update script.js di: $servePath\script.js" -ForegroundColor Cyan
 $jsContent = Get-Content "$servePath\script.js" -Raw
