@@ -70,7 +70,7 @@ CrypShare/
 ---
 ## 🏗 Architecture
 
-![Architecture Diagram](asset/architecture.png)
+![Architecture Diagram](/asset/architecture.png)
 
 ---
 
