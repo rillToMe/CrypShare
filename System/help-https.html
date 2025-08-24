@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Help HTTPS • Aether</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="card auth-card">
+      <h1 class="title">
+        <span class="title-icon">🔒</span>
+        Bantuan HTTPS
+      </h1>
+      <p>
+        Server ini berjalan dengan <b>HTTPS self-signed</b>.  
+        Agar browser menampilkan <span style="color:#00ffa3;">gembok hijau</span>,  
+        kamu perlu install certificate di perangkat.
+      </p>
+
+      <h2 class="subtitle">📥 Download Certificate</h2>
+      <p>
+        <a class="btn btn-primary" href="/certs/lan-cert.cer" download>⬇️ Download lan-cert.cer</a>
+      </p>
+
+      <h2 class="subtitle">💻 Windows</h2>
+      <ul>
+        <li>Double click file <code>lan-cert.cer</code>.</li>
+        <li>Pilih <b>Install Certificate</b>.</li>
+        <li>Pilih <b>Local Machine</b> → <b>Trusted Root Certification Authorities</b>.</li>
+        <li>Selesai → restart browser.</li>
+      </ul>
+
+      <h2 class="subtitle">📱 Android</h2>
+      <ul>
+        <li>Kirim <code>lan-cert.cer</code> ke HP.</li>
+        <li>Buka <b>Settings → Security → Encryption & credentials → Install a certificate → CA certificate</b>.</li>
+        <li>Pilih file dan konfirmasi.</li>
+      </ul>
+
+      <h2 class="subtitle">📱 iOS</h2>
+      <ul>
+        <li>Kirim <code>lan-cert.cer</code> ke iPhone/iPad.</li>
+        <li>Buka file → Install Profile.</li>
+        <li>Settings → General → About → Certificate Trust Settings → aktifkan Full Trust.</li>
+      </ul>
+
+      <p class="muted">
+        Kalau tidak install certificate, server tetap bisa diakses,  
+        hanya saja browser akan memberikan warning.
+      </p>
+            <div class="meta" style="text-align:center; margin-top:20px; font-size:15px;"> <a href="files.html" class="link">Kembali</a></div>
+    </div>
+
+  </div>
+
+
+
+</body>
+</html>

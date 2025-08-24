@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forget Password • Aether</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="ico-refresh" viewBox="0 0 24 24">
+      <path d="M20 12a8 8 0 1 1-2.34-5.66L20 8M20 4v4h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <main class="page">
+    <section class="card">
+      <h1 class="title">
+        <span class="title-icon">
+          <svg><use href="#ico-refresh"></use></svg>
+        </span>
+        Reset Password
+      </h1>
+
+      <p class="muted">Tekan tombol di bawah untuk mengirim permintaan reset password.</p>
+
+      <div class="actions">
+        <button id="resetButton" class="btn btn-accent" type="button">
+          <svg class="icon-left"><use href="#ico-refresh"></use></svg>
+          Kirim Permintaan Reset
+        </button>
+        <a class="link" href="index.html">Kembali ke Login</a>
+      </div>
+
+      <p id="resetStatus" class="message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

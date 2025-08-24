@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>List File • Aether</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="ico-folder" viewBox="0 0 24 24">
+      <path d="M3 7h6l2 2h10v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ico-file" viewBox="0 0 24 24">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ico-image" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="8.5" cy="10" r="1.8" fill="currentColor"/>
+      <path d="M21 16l-5.5-5.5L9 17" fill="none" stroke="currentColor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ico-video" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="14" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M17 8l4-2v12l-4-2V8z" fill="none" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="ico-zip" viewBox="0 0 24 24">
+      <rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M12 3v18M9 6h6M9 10h6M9 14h6" fill="none" stroke="currentColor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ico-up" viewBox="0 0 24 24">
+      <path d="M12 5l-7 7m7-7l7 7M12 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <main class="page">
+    <section class="card">
+      <h1 class="title">
+        <span class="title-icon"><svg><use href="#ico-folder"></use></svg></span>
+        Daftar File & Folder
+      </h1>
+
+      <p class="muted">
+        Tambahkan file/folder ke <code>D:\GrokVersion\uploads</code>, lalu refresh halaman ini untuk melihat perubahan.
+      </p>
+      <p class="meta" style="text-align:center; margin-top:20px; font-size:15px;"><a href="help-https.html" class="link">Bantuan bantuan untuk HTTPS</a></p>
+
+      <nav class="tabs">
+        <a href="#images" class="tab" data-target="images">Gambar</a>
+        <a href="#videos" class="tab" data-target="videos">Video</a>
+        <a href="#others" class="tab" data-target="others">Lainnya</a>
+      </nav>
+
+      <div class="file-list">
+        <h2 class="subtitle"><i class="fa-solid fa-image"></i> Foto</h2>
+        <ul id="images">{FILELIST}</ul>
+
+        <h2 class="subtitle"><i class="fa-solid fa-video"></i> Video</h2>
+        <ul id="videos"></ul>
+
+        <h2 class="subtitle"><i class="fa-solid fa-file"></i> File Lain</h2>
+        <ul id="others"></ul>
+      </div>
+
+      <div class="actions">
+        <a class="link" href="index.html">Kembali</a>
+      </div>
+    </section>
+  </main>
+
+  <button id="btnTop" title="Kembali ke atas"
+          style="position:fixed; right:18px; bottom:18px; display:none; z-index:10;
+                 border:1px solid rgba(163,237,255,.25); background:rgba(8,14,22,.6);
+                 color:#e6f7ff; border-radius:12px; width:44px; height:44px; cursor:pointer;">
+    <svg style="width:20px;height:20px"><use href="#ico-up"></use></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
