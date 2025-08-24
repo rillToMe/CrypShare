@@ -64,6 +64,7 @@ CrypShare/
 ├─ Logs/             # logs & debug files
 ├─ cache/            # cached password/ip
 ├─ certs/            # https certificates
+├─ asset/
 ├─ TransferPy.ps1    # PowerShell launcher
 ├─ requirements.txt  # python dependencies
 ├─ LICENSE           
