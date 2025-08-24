@@ -46,7 +46,7 @@ mkcert -install
 
 On Windows (PowerShell):
 ```powershell
-.\TransferPy.ps1
+.\main.ps1
 ```
 
 Access the server via:
